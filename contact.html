@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Portfolio Kacpra Budnego">
+    <meta name="keywords" content="kacper budny, portfolio kacpra budnego, muzyka">
+    <meta name="author" content="Kacper Budny">
+    <title>Kacper Budny | Kontakt</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/formcheck.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/easteregg.js"></script>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><a href="index.html">Kacper <span class="highlight">Budny</span></a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="lang" data-key="HOME">Strona główna</a></li>
+            <li><a href="about.html" class="lang" data-key="ABOUT">O mnie</a></li>
+            <li><a href="music.html" class="lang" data-key="MUSIC">Muzyka</a></li>
+            <li><a href="shows.html" class="lang" data-key="CONCERTS">Koncerty</a></li>
+            <li class="current"><a href="contact.html" class="lang" data-key="CONTACT">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="content">
+        <article>
+          <h2 class="lang" data-key="CONTACT">Kontakt</h2>
+          <form name="contact" action="contact.php" method="post" onsubmit="return validateFormContact()" method="post" class="contact">
+            <div>
+              <input class="langin" name="name" type="text" placeholder="Imię" data-key="NAME">
+              <input class="langin" name="email" type="email" placeholder="Adres e-mail" data-key="EMAIL">
+              <input class="langin" name="date" type="date" placeholder="Data urodzenia">
+            </div>
+            <div>
+              <textarea class="langin" name="message" rows="10" placeholder="Wiadomość" data-key="MESSAGE"></textarea>
+            </div>
+            <div>
+              <input type="file" name="file" placeholder="Wyślij plik">
+            </div>
+            <button class="lang" type="submit" data-key="SEND">Wyślij</button>
+          </form>
+        </article>
+      </div>
+    </div>
+
+    <footer>
+      <p>Kacper Budny, Copyright &copy; 2019</p>
+    </footer>
+
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/kacperbudny" class="icon" target="_blank"><img src="./img/fb.png" alt="Facebook icon"></a>
+      <a href="https://www.instagram.com/dobrywieczor_/" class="icon" target="_blank"><img src="./img/ig.png" alt="Instagram icon"></a>
+      <a href="https://www.youtube.com/channel/UCZp4qiRxhTiGzNs3fqD24zA" class="icon" target="_blank"><img src="./img/yt.png" alt="YouTube icon"></a>
+      <a href="https://open.spotify.com/user/sbdydhh1s919b37ty0xr3ksma" class="icon" target="_blank"><img src="./img/sp.png" alt="Spotify icon"></a>
+    </div>
+
+    <div class="language-bar">
+      <a class="iconl translate" id="pl"><img src="./img/pl.png" alt="polish"></a>
+      <a class="iconl translate" id="en"><img src="./img/en.png" alt="english"></a>
+    </div>
+
+    <p class="title" data-key="CONTACT"></p>
+
+    <script src="./js/languages.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Portfolio Kacpra Budnego">
+    <meta name="keywords" content="kacper budny, portfolio kacpra budnego, muzyka">
+    <meta name="author" content="Kacper Budny">
+    <title>Kacper Budny | Strona główna</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/rain.js"></script>
+    <script src="./js/formcheck.js"></script>
+    <script src="./js/fade.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/easteregg.js"></script>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><a href="index.html">Kacper <span class="highlight">Budny</span></a></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class ="current"><a href="index.html" class="lang" data-key="HOME">Strona główna</a></li>
+            <li><a href="about.html" class="lang" data-key="ABOUT">O mnie</a></li>
+            <li><a href="music.html" class="lang" data-key="MUSIC">Muzyka</a></li>
+            <li><a href="shows.html" class="lang" data-key="CONCERTS">Koncerty</a></li>
+            <li><a href="contact.html" class="lang" data-key="CONTACT">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="banner">
+      <canvas id="particleCanvas"></canvas>
+      <div class="container">
+        <h2 id="songname">Memories</h2>
+          <p id="listen"><a href="https://www.youtube.com/watch?v=JNKgiMJbnws" class="button1 lang" target="_blank" data-key="LISTENNOW">Posłuchaj teraz</a></p><br>
+      </div>
+    </section>
+
+    <section class ="mainpagesection">
+      <div class="container">
+        <h2><span class="lang" data-key="NEAREST">Najbliższy</span> <span class="highlight lang" data-key="CONCERT">koncert</span></h2>
+          <table class="visibleshow">
+            <tr>
+              <th class="lang" data-key="PROJECT">Projekt</th>
+              <th class="lang" data-key="DATE">Data</th>
+              <th class="lang" data-key="PLACE">Miejsce</th>
+              <th class="lang" data-key="PRICE">Cena</th>
+            </tr>
+            <tr>
+              <td class="highlight"><b>Alge'aters</b></td>
+              <td>08.04.2019</td>
+              <td class="lang" data-key="RCK">Polska, Racibórz, RCK</td>
+              <td class="lang" data-key="FREE">Wstęp bezpłatny</td>
+            </tr>
+          </table>
+          <div class="hiddencontent">
+          <table>
+            <tr>
+              <th class="lang" data-key="PROJECT">Projekt</th>
+              <th class="lang" data-key="DATE">Data</th>
+              <th class="lang" data-key="PLACE">Miejsce</th>
+              <th class="lang" data-key="PRICE">Cena</th>
+            </tr>
+            <tr>
+              <td class="highlight"><b>Alge'aters</b></td>
+              <td>08.04.2019</td>
+              <td class="lang" data-key="RCK">Polska, Racibórz, RCK</td>
+              <td class="lang" data-key="FREE">Wstęp bezpłatny</td>
+            </tr>
+            <tr>
+              <td class="highlight"><div class="hiddenshows">Kacper Budny</div></td>
+              <td>09.04.2019</td>
+              <td class="lang" data-key="WEMBLEY">Wielka Brytania, Londyn, Stadion Wembley</td>
+              <td>&pound;1000</td>
+            </tr>
+            <tr>
+              <td class="highlight">Kacper Budny</td>
+              <td>10.04.2019</td>
+              <td>USA, Seattle, Benaroya Hall</td>
+              <td>$250</td>
+            </tr>
+            <tr>
+              <td class="highlight">Alge'aters</td>
+              <td>26.04.2019</td>
+              <td class="lang" data-key="RCK">Polska, Racibórz, RCK</td>
+              <td class="lang" data-key="FREE">Wstęp bezpłatny</td>
+            </tr>
+          </table>
+          <p><a href="shows.html" class="button2 lang" data-key="SEEMORE">Zobacz więcej koncertów</a></p>
+        </div>
+        <p><a id="slidebut" class="button2 lang" data-key="SEEMORE">Zobacz więcej koncertów</a></p>
+      </div>
+    </section>
+
+    <div id="banner2"></div>
+
+    <section class="mainpagesection">
+      <div class="container">
+        <h2><span class="lang" data-key="SIGNUP">Zapisz się na</span> <span class="highlight">newsletter</span></h2>
+        <form name="newsletter" onsubmit="return validateForm()" method="post" class="newsletter">
+          <div>
+            <label class="lang" data-key="NAME">Imię</label>
+            <input class="langin" name="name" type="text" placeholder="Imię" data-key="NAME">
+            <label class="lang" data-key="EMAIL">Adres e-mail</label>
+            <input class="langin" name="email" type="email" placeholder="Adres e-mail" data-key="EMAIL">
+          </div>
+          <button type="submit" class="lang" data-key="SEND">Wyślij</button>
+      </form>
+      </div>
+    </section>
+
+    <div id="banner3">
+      <footer>
+        <div class="container">
+          <p>Kacper Budny, Copyright &copy; 2019</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/kacperbudny" class="icon" target="_blank"><img src="./img/fb.png" alt="Facebook icon"></a>
+      <a href="https://www.instagram.com/dobrywieczor_/" class="icon" target="_blank"><img src="./img/ig.png" alt="Instagram icon"></a>
+      <a href="https://www.youtube.com/channel/UCZp4qiRxhTiGzNs3fqD24zA" class="icon" target="_blank"><img src="./img/yt.png" alt="YouTube icon"></a>
+      <a href="https://open.spotify.com/user/sbdydhh1s919b37ty0xr3ksma" class="icon" target="_blank"><img src="./img/sp.png" alt="Spotify icon"></a>
+    </div>
+
+    <div class="language-bar">
+      <a class="iconl translate" id="pl"><img src="./img/pl.png" alt="polish"></a>
+      <a class="iconl translate" id="en"><img src="./img/en.png" alt="english"></a>
+    </div>
+
+    <p class="title" data-key="HOME"></p>
+
+    <script src="./js/languages.js"></script>
+  </body>
+</html>
