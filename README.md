@@ -4,13 +4,13 @@ A simple responsive website that is actually a showcase of my music-making hobby
 
 ## Screenshots
 
-to-add
+![Website screenshot](screenshot.png)
 
 ## Technologies
 * HTML
 * CSS
 * Javascript
-* ... and just a little bit of PHP for because I wanted to play with it :)
+* ... and a tiny bit of PHP just because I wanted to play with it :)
 
 ## Features
 * Multi-lingual website (Polish and English)
